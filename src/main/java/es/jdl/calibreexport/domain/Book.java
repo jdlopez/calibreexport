@@ -35,6 +35,7 @@ public class Book {
     private String uuid;
     private Boolean hasCover;
     private Date lastModified;
+    private String coverRelPath;
 
     public int getId() {
         return id;
@@ -146,5 +147,13 @@ public class Book {
 
     public void setLastModified(Date lastModified) {
         this.lastModified = lastModified;
+    }
+
+    public String getCoverRelPath() {
+        return coverRelPath;
+    }
+
+    public void setCoverRelPath(String coverRelPath) {
+        this.coverRelPath = coverRelPath;
     }
 }
